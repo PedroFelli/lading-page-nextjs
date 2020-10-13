@@ -1,6 +1,6 @@
 # Simple NextJS Quick Start
 
-A simple project starter to work with React, NextJS and Styled Components
+A simple project starter to work with React, NextJS, GraphQl and Styled Components
 
 You can see the example in [https://nextjs-quickstart.now.sh/](https://nextjs-quickstart.now.sh/)
 
