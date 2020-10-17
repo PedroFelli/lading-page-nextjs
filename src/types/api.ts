@@ -62,6 +62,34 @@ export type SectionModulesProps = {
   modules: Modules[]
 }
 
+export type SectionPricingBoxProps = {
+  totalPrice: number
+  numberInstallments: number
+  priceInstallment: number
+  benefits: string
+  button: {
+    url: string
+    label: string
+  }
+}
+
+export type sectionAboutUsProps = {
+  title: string
+  authors: {
+    photo: {
+      alternativeText: string
+      url: string
+    }
+    name: string
+    role: string
+    socialLinks: {
+      title: string
+      url: string
+    }
+    description: string
+  }
+}
+
 export type LadingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -70,4 +98,6 @@ export type LadingPageProps = {
   sectionConcepts: SectionConceptsProps
   sectionAgenda: SectionAgendaProps
   sectionModules: SectionModulesProps
+  pricingBox: SectionPricingBoxProps
+  sectionAboutUs: sectionAboutUsProps
 }
