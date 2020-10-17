@@ -16,12 +16,10 @@ export const User = styled.div`
   display: flex;
 `
 
-export const Image = styled.picture`
-  img {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 100%;
-  }
+export const Image = styled.img`
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
 `
 
 export const Name = styled.p`
@@ -40,28 +38,23 @@ export const Text = styled.blockquote`
     font-size: ${theme.font.sizes.xsmall};
     line-height: ${theme.font.sizes.medium};
     position: relative;
-
     input {
       opacity: 0;
       position: absolute;
       pointer-events: none;
-
       &:checked + p {
         -webkit-line-clamp: unset;
       }
     }
-
     input:not(:checked) ~ p:not(.truncated) ~ label {
       display: none;
     }
-
     label {
       cursor: pointer;
       color: ${theme.colors.primary};
       float: right;
       margin-top: ${theme.spacings.xxsmall};
     }
-
     &::before {
       content: '“';
       font-size: ${theme.font.sizes.xxlarge};
@@ -70,7 +63,6 @@ export const Text = styled.blockquote`
       top: ${theme.spacings.xsmall};
       left: 0;
     }
-
     > p {
       padding-top: ${theme.spacings.small};
       display: -webkit-box;
